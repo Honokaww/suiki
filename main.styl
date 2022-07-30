@@ -1,0 +1,394 @@
+
+fonth2 = 24px 
+fonth2_PC= 1.8em /* pc */
+fontP = 1em
+fontP_PC= 14px
+title_sb= 18px /* sp */
+title_sb_PC=16px  /* pc */
+
+
+:root{
+
+  --Englishfont: 'Englishfont', serif;
+}
+@font-face {
+  font-family: 'Englishfont';
+  src: url('../font/HindVadodara-Regular.ttf') format('truetype');
+}
+
+/*Home_iPhoneおよび共通設定*/
+body 
+	font-family:'Noto Sans JP', sans-serif;
+	overflow-x: hidden;
+
+.container 
+  color: #505050;
+  width: 100%
+  background: #fff;
+
+.cotainer_wrapper
+  max-width 1280px
+  padding: 0
+  margin: 0 auto
+img
+ width: 100%
+.key
+  position relative
+  margin-top: 50px
+  padding: 10px
+  .key_title
+    text-align: center
+    .brand
+      font-size: 2em
+      font-family: var(--Englishfont);
+      text-align: center
+      text-decoration: none;
+      color #505050;
+      letter-spacing: 5px
+      font-weight: bold
+
+    .brand:before 
+      content: '';
+      position: absolute;
+      left: 50%;
+      bottom: 0;
+      width: 0;
+      border-bottom: solid 1px #2f2f2f;
+      transform: translateX(-50%);
+      animation: border_anim 3s linear forwards;
+      @-moz-keyframes border_anim {
+        0% {
+          width: 0%;
+        }
+        100% {
+          width: 100%;
+        }
+      }
+      @-webkit-keyframes border_anim {
+        0% {
+          width: 0%;
+        }
+        100% {
+          width: 100%;
+        }
+      }
+      @-o-keyframes border_anim {
+        0% {
+          width: 0%;
+        }
+        100% {
+          width: 100%;
+        }
+      }
+      @keyframes border_anim {
+        0% {
+          width: 0%;
+        }
+        100% {
+          width: 100%;
+        }
+      }
+.key-visual
+  position: relative;
+  .topphoto
+    background: url(../imges/keyvisual.jpg)
+    background-repeat: no-repeat;
+    background-size: 100%
+    height 340px
+    margin-top: 24px
+    margin-bottom: 80px
+
+    .key_font
+      background: url(../imges/key_visual_suiki.svg)
+      background-repeat: no-repeat;
+      width: 140px;
+      height: 65px
+      position: absolute;
+      left: 58%;
+      top: 44%;
+      transform: translate(-50%,-50%) 
+      animation: fadeup 2s cubic-bezier(0.33, 1, 0.68, 1) 1 forwards;
+      .leadtext
+        font-size: 18px
+        position: absolute;
+        left :-139%;
+        top: -16%;
+      .leadtext_en
+        font-size: 14px
+        font-family: var(--Englishfont);
+        position: absolute;
+        left :-148%;
+        top: 37%;
+@keyframes fadeup {
+  0% {
+    transform: translateY(30px);
+    opacity: 0;
+  }
+  80% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+      
+      
+
+.title
+  text-align: center
+  margin-bottom: 50px
+  .font_sb
+    font-size: 18px
+    padding-bottom: 8px
+  .brand_name
+    font-family: var(--Englishfont);
+    font-size: 40px
+    font-weight: 800
+    padding-bottom: 8px
+  .title_en
+    font-size: fontP
+    font-family: var(--Englishfont);
+
+.box_gradient
+  width: 300px
+  height 150px
+  background: rgb(221,248,255);
+  background: linear-gradient(0deg, rgba(221,248,255,1) 27%, rgba(117,169,218,1) 100%);
+  animation: zoomIn 3s cubic-bezier(0.25, 1, 0.5, 1) 1 forwards;
+  
+@keyframes zoomIn {
+  0% {
+    transform: scale(0.8);
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+ 
+  .link_text
+    text-align: center
+    color #fff
+    padding-top: 50px
+    font-family: var(--Englishfont);
+    h2
+      padding-bottom: 4px
+      border-bottom: solid 1px #fff
+      width: 107px
+      margin: 0 auto
+      font-size: fonth2
+    .title_en
+      font-size: fontP
+      padding-top: 4px
+.box_text 
+  .text_jp
+    width: 270px
+    padding-top: 24px
+    margin-bottom: 50px   
+.our_brand
+  .box_gradient
+    margin: 0 0 0 auto;
+    .link_text
+      h2
+        width: 170px
+  .box_text 
+    .text_jp
+      margin: 0 0 0 auto;
+
+.brand_section
+  margin-top: 80px
+  margin-bottom: 80px
+  .brand_top
+    img
+      width: 90%
+      display: block
+      margin: 0 auto
+    .text_box
+      width: 307px
+      margin: 0 auto
+      margin-top: 16px
+      margin-bottom: 42px
+
+  .brand_photos
+    display: flex;
+    flex-direction: row;
+    gap: 56px;
+    justify-content: center
+    align-items: flex-start;
+    #brand_02 
+      margin-top: 32px;
+
+.section_banner
+  width: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: start;
+  -webkit-align-items: flex-start;
+  align-items: flex-start;
+  -webkit-flex-wrap: wrap;
+  
+ 
+  .banner_item
+    display: flex
+    flex-direction: column
+    flex-wrap: wrap;
+    width: 50%;
+    border: 0;
+    a
+      display: block;
+      position: relative;
+      border: none;
+    
+.information
+  max-width: 1280px;
+  margin: 0 auto;
+  h2
+    font-size: fonth2
+    padding-top: 50px;
+    margin-bottom: 32px;
+    text-align: center;
+  .information_box  
+    background: #FBFBFB;
+    padding: 20px
+    .information_detail
+      margin-left: 20px;
+      margin-right: 20px;
+      padding-bottom: 16px;
+      .title
+        text-align: left 
+        font-size: 0.8em;
+        padding-bottom: 8px;
+        border-bottom: solid 1px #505050;
+        margin-bottom: 16px;
+.footer
+  margin-top: 50px
+  margin-bottom: 50px
+  nav ul
+    list-style-type: none;
+    padding-left: 40px
+    li
+      padding-bottom: 24px
+    a
+      font-size: fontP;
+      color: #505050;
+      text-decoration: none;
+    a:hover
+      text-decoration: underline;
+
+.copy
+  font-size: 0.8em;
+  text-align: center;
+  padding-bottom: 16px;
+  padding-top: 16px;
+
+
+/*Home_iPadおよび共通設定*/
+@media screen and (min-width: 768px)
+  .key-visual
+    .topphoto
+      .key_font
+        left: 65%
+    
+    
+
+
+     
+
+
+
+
+
+
+
+
+      
+     
+
+     
+
+
+
+
+
+      
+
+
+
+
+      
+
+      
+
+
+
+
+    
+    
+
+
+
+
+       
+
+  
+
+    
+  
+  
+
+  
+    
+
+  
+
+  
+  
+  
+    
+
+
+
+
+
+
+
+
+
+
+    
+
+
+  
+
+  
+    
+
+    
+
+    
+
+
+
+
+
+
+  
+    
+   
+      
+
+
+
+
+
+
+
+
+
+
