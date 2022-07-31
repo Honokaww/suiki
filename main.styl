@@ -34,8 +34,7 @@ img
  width: 100%
 .key
   position relative
-  margin-top: 50px
-  padding: 10px
+  padding: 30px
   .key_title
     text-align: center
     .brand
@@ -95,7 +94,6 @@ img
     background-repeat: no-repeat;
     background-size: 100%
     height 340px
-    margin-top: 24px
     margin-bottom: 80px
 
     .key_font
@@ -149,60 +147,66 @@ img
   .title_en
     font-size: fontP
     font-family: var(--Englishfont);
-
-.box_gradient
+.concept
+  margin-bottom: 50px
+.concept_container
   width: 300px
-  height 150px
-  background: rgb(221,248,255);
-  background: linear-gradient(0deg, rgba(221,248,255,1) 27%, rgba(117,169,218,1) 100%);
-  animation: zoomIn 3s cubic-bezier(0.25, 1, 0.5, 1) 1 forwards;
+  height 100%
+  .box_gradient
+    width: 300px
+    height 150px
+    background: rgb(221,248,255);
+    background: linear-gradient(0deg, rgba(221,248,255,1) 27%, rgba(117,169,218,1) 100%);
+    animation: zoomIn 3s cubic-bezier(0.25, 1, 0.5, 1) 1 forwards;
+
+    @keyframes zoomIn {
+      0% {
+        transform: scale(0.8);
+        opacity: 0;
+      }
+      100% {
+         opacity: 1;
+        transform: scale(1);
+      }
+    }
   
-@keyframes zoomIn {
-  0% {
-    transform: scale(0.8);
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-    transform: scale(1);
-  }
-}
- 
-  .link_text
-    text-align: center
-    color #fff
-    padding-top: 50px
-    font-family: var(--Englishfont);
-    h2
-      padding-bottom: 4px
-      border-bottom: solid 1px #fff
-      width: 107px
-      margin: 0 auto
-      font-size: fonth2
-    .title_en
-      font-size: fontP
-      padding-top: 4px
+    .link_text
+      text-align: center
+      color #fff
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%,-50%) 
+      font-family: var(--Englishfont);
+      h2
+        padding-bottom: 4px
+        border-bottom: solid 1px #fff
+        width: 107px
+        margin: 0 auto
+        font-size: fonth2
+      .title_en
+        font-size: fontP
+        padding-top: 4px
 .box_text 
+  padding-top: 24px
+  
   .text_jp
     width: 270px
-    padding-top: 24px
-    margin-bottom: 50px   
+    margin: 0 auto 
 .our_brand
-  .box_gradient
-    margin: 0 0 0 auto;
-    .link_text
-      h2
-        width: 170px
-  .box_text 
-    .text_jp
-      margin: 0 0 0 auto;
-
+  .concept_container
+     margin: 0 0 0 auto;
+     .box_gradient
+      .link_text
+        h2
+          width: 150px
+      
 .brand_section
   margin-top: 80px
   margin-bottom: 80px
   .brand_top
     img
-      width: 90%
+      width: 100%
       display: block
       margin: 0 auto
     .text_box
@@ -210,6 +214,9 @@ img
       margin: 0 auto
       margin-top: 16px
       margin-bottom: 42px
+      .brand_text
+        font-size: fontP
+        line-height: 24px
 
   .brand_photos
     display: flex;
@@ -232,6 +239,7 @@ img
   -webkit-align-items: flex-start;
   align-items: flex-start;
   -webkit-flex-wrap: wrap;
+  
   
  
   .banner_item
@@ -292,8 +300,69 @@ img
 @media screen and (min-width: 768px)
   .key-visual
     .topphoto
+      margin-bottom: 100px
       .key_font
         left: 65%
+        width: 292px
+        .leadtext_en
+          left: -144%;
+  .title
+    margin-bottom: 80px 
+    .font_sb
+      font-size: fontP
+    .font-size
+      font-size: 30px
+    .title_en
+      font-size: fontP_PC
+  .concept
+    margin-bottom: 80px
+  .concept_container
+    width: 640px
+    height 100%
+    .box_gradient
+      width: 640px
+      height: 235px
+      .link_text
+        h2
+          font-size: 18px
+          padding-bottom: 8px
+          width: 73px
+        .title_en
+          font-size: fontP_PC
+          padding-top: 8px
+    .box_text
+      padding-top: 42px
+      .text_jp
+        width: 522px
+  .brand_section
+    margin-top: 100px
+    .brand_content
+      display: flex
+      justify-content: center
+      gap: 42px
+      .text_box
+        width: 309px
+        .brand_text
+          font-size: fontP_PC
+          line-height: 22px
+      .brand_photos
+        gap: 40px
+        #brand_02
+          margin-top: 56px
+  .banner_box
+    padding: 40px
+  .information
+    h2
+      font-size: fonth2_PC
+
+
+
+
+
+
+
+  
+
     
     
 
