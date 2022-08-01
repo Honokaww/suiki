@@ -664,6 +664,9 @@ img {
   .about {
     margin-top: 80px;
   }
+  .about h2 {
+    font-size: 1.8em /* pc */;
+  }
   .Form {
     margin-top: 50px;
     width: 100%;
@@ -686,6 +689,113 @@ img {
 @media screen and (min-width: 1024px) {
   .Form .Form-Btn {
     margin-bottom: 50px;
+  }
+}
+/*Company_iPhoneおよび共通設定*/
+.company .about {
+  margin-bottom: 50px;
+}
+.terms {
+  margin-bottom: 50px;
+}
+.terms .table {
+  border-collapse: collapse;
+  border-spacing: 0;
+  width: 100%;
+}
+.terms .table tr {
+  border-top: 1px solid #a0a5ac;
+  border-bottom: 1px solid #a0a5ac;
+}
+.table tr th,
+.table tr td {
+  padding: 20px 20px;
+  text-align: left;
+  vertical-align: top;
+}
+.table tr th {
+  width: 20%;
+  font-weight: bold;
+}
+.table tr td {
+  width: 80%;
+  background: #f3f9ff;
+}
+@media screen and (max-width: 767px) {
+  .table tr th,
+  .table tr td {
+    display: block;
+    width: 100%;
+  }
+}
+/* 装飾 */
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 30px 40px;
+}
+.dark_containre {
+  background: #dbdbdb;
+  padding-top: 1px;
+}
+/*Conpany_iPadおよび共通設定*/
+@media screen and (min-width: 768px) {
+  .terms {
+    width: 80%;
+    margin: 0 auto;
+    padding-bottom: 50px;
+  }
+  .table tr th {
+    font-size: 14px;
+  }
+  .table tr td {
+    width: 15%;
+    font-size: 14px;
+  }
+}
+/*Conpany_PCおよび共通設定*/
+@media screen and (min-width: 1280px) {
+  .terms {
+    width: 70%;
+  }
+  .table tr td {
+    width: 20%;
+  }
+}
+/*Privacy_iPhoneおよび共通設定*/
+.privacy-policy {
+  max-width: 300px;
+  margin: 50px auto;
+  height: 390px;
+  overflow: scroll;
+  padding: 25px;
+  border: 1px solid #505050;
+  background-color: #fefefe;
+  line-height: 1.5;
+}
+.privacy-policy__item p {
+  margin-bottom: 25px;
+}
+/*Privacy_iPadおよび共通設定*/
+@media screen and (min-width: 768px) {
+  .privacy-policy {
+    max-width: 700px;
+    margin: 80px auto;
+  }
+}
+/*Privacy_PCおよび共通設定*/
+@media screen and (min-width: 1024px) {
+  .privacy-policy {
+    max-width: 800px;
+    margin: 100px auto;
+    height: 475px;
+  }
+}
+/*Privacy_PCおよび共通設定*/
+@media screen and (min-width: 1280px) {
+  .privacy-policy {
+    max-width: 1000px;
   }
 }
 @-moz-keyframes fadeup {
