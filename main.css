@@ -233,9 +233,12 @@ img {
 }
 .box_text {
   padding-top: 24px;
+  width: 270px;
+  margin: 0 auto;
 }
 .box_text .text_jp {
-  width: 270px;
+  font-size: 1em;
+  line-height: 24px;
   margin: 0 auto;
 }
 .our_brand .concept_container {
@@ -276,6 +279,12 @@ img {
 .brand_container .brand_photos #brand_02 {
   margin-top: 32px;
 }
+.banner_inner .item_about #item_sp {
+  display: block;
+}
+.banner_inner .item_about #item_pc {
+  display: none;
+}
 .section_banner {
   width: 100%;
   display: -webkit-box;
@@ -313,7 +322,8 @@ img {
 }
 .information_container .information_box {
   background: #fbfbfb;
-  padding: 20px;
+  padding: 0 20px;
+  padding-top: 24px;
 }
 .information_container .information_box .information_detail {
   margin-left: 20px;
@@ -402,16 +412,19 @@ img {
   }
   .concept_container .box_text {
     padding-top: 42px;
+    width: 640px;
   }
   .concept_container .box_text .text_jp {
     width: 522px;
+    font-size: 14px;
+    line-height: 22px;
   }
   .brand_container {
-    margin-top: 200px;
-    margin-bottom: 200px;
+    margin-top: 100px;
+    margin-bottom: 100px;
   }
   .brand_container .brand_section {
-    margin-bottom: 150px;
+    margin-bottom: 100px;
   }
   .brand_container .brand_section .brand_content {
     display: flex;
@@ -431,33 +444,45 @@ img {
   .brand_container .brand_section .brand_content .brand_photos #brand_02 {
     margin-top: 56px;
   }
+  .bannre_title .title {
+    margin-bottom: 0px;
+  }
   .banner_box {
-    padding: 40px;
+    padding: 50px;
   }
-  .information h2 {
+  .information_container .information h2 {
     font-size: 1.8em /* pc */;
+    margin-bottom: 50px;
   }
-  .information .information_box {
+  .information_container .information .information_box {
     display: flex;
     flex-wrap: wrap;
+    padding: 0 40px;
+    padding-top: 42px;
   }
-  .information .information_box .information_detail {
+  .information_container .information .information_box .information_detail {
     width: 44%;
     margin: auto;
     padding-bottom: 42px;
   }
-  .information .information_box .information_detail .titile {
+  .information_container .information .information_box .information_detail .titile {
+    font-size: 0.7em;
+  }
+  .information_container .information .information_box .information_detail .text {
     font-size: 14px;
   }
   .footer {
     margin-bottom: 0px;
     margin-top: 0px;
     padding: 50px;
+    max-width: 1000px;
+    margin: 0 auto;
   }
   .footer nav ul {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    padding-left: 0px;
   }
   .footer nav ul li {
     padding-bottom: 0px;
@@ -471,8 +496,44 @@ img {
 }
 /*Home_PCおよび共通設定*/
 @media screen and (min-width: 1024px) {
-  .footer nav ul {
-    padding: 32px 120px 32px 120px;
+  .key-visual .topphoto .key_font {
+    left: 68%;
+    top: 47%;
+    width: 372px;
+  }
+  .title {
+    margin-bottom: 100px;
+  }
+  .concept {
+    margin-bottom: 100px;
+  }
+  .brand_container .brand_section .brand_content {
+    gap: 80px;
+  }
+  .brand_container .brand_section .brand_content .brand_photos {
+    gap: 50px;
+  }
+  .bannre_title .title {
+    margin-bottom: 80px;
+  }
+  .banner_box {
+    padding: 0px;
+    display: flex;
+  }
+  .banner_box .banner_inner {
+    width: 25%;
+  }
+  .banner_box .banner_inner .item_about #item_sp {
+    display: none;
+  }
+  .banner_box .banner_inner .item_about #item_pc {
+    display: block;
+  }
+  .banner_box .section_banner {
+    -webkit-flex-wrap: nowrap;
+  }
+  .information_container {
+    margin-top: 80px;
   }
 }
 @-moz-keyframes fadeup {
