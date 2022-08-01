@@ -244,33 +244,36 @@ img {
 .our_brand .concept_container .box_gradient .link_text h2 {
   width: 150px;
 }
-.brand_section {
+.brand_container {
   margin-top: 80px;
   margin-bottom: 80px;
 }
-.brand_section .brand_top img {
+.brand_container .brand_section {
+  margin-bottom: 100px;
+}
+.brand_container .brand_section .brand_top img {
   width: 100%;
   display: block;
   margin: 0 auto;
 }
-.brand_section .brand_top .text_box {
+.brand_container .brand_section .brand_top .text_box {
   width: 307px;
   margin: 0 auto;
-  margin-top: 16px;
+  margin-top: 24px;
   margin-bottom: 42px;
 }
-.brand_section .brand_top .text_box .brand_text {
+.brand_container .brand_section .brand_top .text_box .brand_text {
   font-size: 1em;
   line-height: 24px;
 }
-.brand_section .brand_photos {
+.brand_container .brand_photos {
   display: flex;
   flex-direction: row;
   gap: 56px;
   justify-content: center;
   align-items: flex-start;
 }
-.brand_section .brand_photos #brand_02 {
+.brand_container .brand_photos #brand_02 {
   margin-top: 32px;
 }
 .section_banner {
@@ -298,31 +301,35 @@ img {
   position: relative;
   border: none;
 }
-.information {
+.information_container {
   max-width: 1280px;
   margin: 0 auto;
+  margin-top: 50px;
 }
-.information h2 {
+.information_container h2 {
   font-size: 24px;
-  padding-top: 50px;
   margin-bottom: 32px;
   text-align: center;
 }
-.information .information_box {
+.information_container .information_box {
   background: #fbfbfb;
   padding: 20px;
 }
-.information .information_box .information_detail {
+.information_container .information_box .information_detail {
   margin-left: 20px;
   margin-right: 20px;
-  padding-bottom: 16px;
+  padding-bottom: 24px;
 }
-.information .information_box .information_detail .title {
+.information_container .information_box .information_detail .title {
   text-align: left;
   font-size: 0.8em;
   padding-bottom: 8px;
   border-bottom: solid 1px #505050;
   margin-bottom: 16px;
+}
+.information_container .information_box .information_detail .text {
+  font-size: 1em;
+  line-height: 24px;
 }
 .footer {
   margin-top: 50px;
@@ -399,25 +406,29 @@ img {
   .concept_container .box_text .text_jp {
     width: 522px;
   }
-  .brand_section {
-    margin-top: 100px;
+  .brand_container {
+    margin-top: 200px;
+    margin-bottom: 200px;
   }
-  .brand_section .brand_content {
+  .brand_container .brand_section {
+    margin-bottom: 150px;
+  }
+  .brand_container .brand_section .brand_content {
     display: flex;
     justify-content: center;
     gap: 42px;
   }
-  .brand_section .brand_content .text_box {
+  .brand_container .brand_section .brand_content .text_box {
     width: 309px;
   }
-  .brand_section .brand_content .text_box .brand_text {
+  .brand_container .brand_section .brand_content .text_box .brand_text {
     font-size: 14px;
     line-height: 22px;
   }
-  .brand_section .brand_content .brand_photos {
+  .brand_container .brand_section .brand_content .brand_photos {
     gap: 40px;
   }
-  .brand_section .brand_content .brand_photos #brand_02 {
+  .brand_container .brand_section .brand_content .brand_photos #brand_02 {
     margin-top: 56px;
   }
   .banner_box {
@@ -425,6 +436,43 @@ img {
   }
   .information h2 {
     font-size: 1.8em /* pc */;
+  }
+  .information .information_box {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .information .information_box .information_detail {
+    width: 44%;
+    margin: auto;
+    padding-bottom: 42px;
+  }
+  .information .information_box .information_detail .titile {
+    font-size: 14px;
+  }
+  .footer {
+    margin-bottom: 0px;
+    margin-top: 0px;
+    padding: 50px;
+  }
+  .footer nav ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .footer nav ul li {
+    padding-bottom: 0px;
+  }
+  .copyright .copy {
+    font-size: 0.8em;
+    text-align: center;
+    padding-bottom: 32px;
+    padding-top: 32px;
+  }
+}
+/*Home_PCおよび共通設定*/
+@media screen and (min-width: 1024px) {
+  .footer nav ul {
+    padding: 32px 120px 32px 120px;
   }
 }
 @-moz-keyframes fadeup {

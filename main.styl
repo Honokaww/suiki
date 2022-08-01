@@ -200,23 +200,24 @@ img
       .link_text
         h2
           width: 150px
-      
-.brand_section
+.brand_container 
   margin-top: 80px
-  margin-bottom: 80px
-  .brand_top
-    img
-      width: 100%
-      display: block
-      margin: 0 auto
-    .text_box
-      width: 307px
-      margin: 0 auto
-      margin-top: 16px
-      margin-bottom: 42px
-      .brand_text
-        font-size: fontP
-        line-height: 24px
+  margin-bottom: 80px     
+  .brand_section
+    margin-bottom: 100px
+    .brand_top
+      img
+        width: 100%
+        display: block
+        margin: 0 auto
+      .text_box
+        width: 307px
+        margin: 0 auto
+        margin-top: 24px
+        margin-bottom: 42px
+        .brand_text
+          font-size: fontP
+          line-height: 24px
 
   .brand_photos
     display: flex;
@@ -253,12 +254,12 @@ img
       position: relative;
       border: none;
     
-.information
+.information_container
   max-width: 1280px;
   margin: 0 auto;
+  margin-top: 50px
   h2
     font-size: fonth2
-    padding-top: 50px;
     margin-bottom: 32px;
     text-align: center;
   .information_box  
@@ -267,13 +268,16 @@ img
     .information_detail
       margin-left: 20px;
       margin-right: 20px;
-      padding-bottom: 16px;
+      padding-bottom: 24px;
       .title
         text-align: left 
         font-size: 0.8em;
         padding-bottom: 8px;
         border-bottom: solid 1px #505050;
         margin-bottom: 16px;
+      .text
+        font-size: fontP
+        line-height: 24px
 .footer
   margin-top: 50px
   margin-bottom: 50px
@@ -334,26 +338,72 @@ img
       padding-top: 42px
       .text_jp
         width: 522px
-  .brand_section
-    margin-top: 100px
-    .brand_content
-      display: flex
-      justify-content: center
-      gap: 42px
-      .text_box
-        width: 309px
-        .brand_text
-          font-size: fontP_PC
-          line-height: 22px
-      .brand_photos
-        gap: 40px
-        #brand_02
-          margin-top: 56px
+  .brand_container 
+    margin-top: 200px
+    margin-bottom: 200px
+    .brand_section
+      margin-bottom: 150px
+      .brand_content
+        display: flex
+        justify-content: center
+        gap: 42px
+        .text_box
+          width: 309px
+          .brand_text
+            font-size: fontP_PC
+            line-height: 22px
+        .brand_photos
+          gap: 40px
+          #brand_02
+            margin-top: 56px
   .banner_box
     padding: 40px
   .information
     h2
       font-size: fonth2_PC
+    .information_box
+      display: flex;
+      flex-wrap: wrap;
+      .information_detail
+        width: 44%;
+        margin: auto;
+        padding-bottom: 42px;
+        .titile
+          font-size: fontP_PC
+  .footer 
+    margin-bottom: 0px
+    margin-top: 0px
+    padding: 50px;
+    nav ul
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between
+     
+      li
+        padding-bottom: 0px
+  .copyright
+    .copy
+      font-size: 0.8em;
+      text-align: center;
+      padding-bottom: 32px;
+      padding-top: 32px;
+
+ /*Home_PCおよび共通設定*/
+ @media screen and (min-width: 1024px) 
+
+  .footer 
+    nav ul
+      padding: 32px 120px 32px 120px;
+
+
+
+
+
+
+
+
+
+
 
 
 
