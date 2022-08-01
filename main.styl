@@ -285,11 +285,11 @@ img
         font-size: fontP
         line-height: 24px
 .footer
-  margin-top: 50px
-  margin-bottom: 50px
+  margin-top: 80px
+  margin-bottom: 56px
+  padding-left: 40px
   nav ul
     list-style-type: none;
-    padding-left: 40px
     li
       padding-bottom: 24px
     a
@@ -298,12 +298,12 @@ img
       text-decoration: none;
     a:hover
       text-decoration: underline;
-
-.copy
-  font-size: 0.8em;
-  text-align: center;
-  padding-bottom: 16px;
-  padding-top: 16px;
+.copyright
+  margin-top: 24px
+  margin-bottom: 24px
+  .copy
+    font-size: 0.8em;
+    text-align: center;
 
 
 /*Home_iPadおよび共通設定*/
@@ -405,11 +405,10 @@ img
       li
         padding-bottom: 0px
   .copyright
+    margin-top: 30px;
+    margin-bottom: 30px;
     .copy
-      font-size: 0.8em;
-      text-align: center;
-      padding-bottom: 32px;
-      padding-top: 32px;
+      font-size: 0.7em;
 
  /*Home_PCおよび共通設定*/
  @media screen and (min-width: 1024px)
@@ -446,6 +445,158 @@ img
       -webkit-flex-wrap: nowrap;
   .information_container
     margin-top: 80px
+
+ /*Contact_iPhoneおよび共通設定*/
+ .about 
+  margin-top: 50px;
+  margin-bottom: 34px
+  text-align: center;
+  h2 
+    font-size: fonth2
+   
+    
+   
+
+.Form {
+  margin-top: 10px;
+  width: 90%;
+  margin: 0 auto
+  max-width: 1500px;
+}
+.Form-Item {
+  padding-top: 16px;
+  padding-bottom: 16px;
+  flex-wrap: wrap;
+  width: 90%
+}
+.Form-Item-Label {
+  width: 100%;
+  max-width: 248px;
+  letter-spacing: 0.05em;
+  font-weight: bold;
+  font-size: 18px;
+}
+.Form-Item-Label {
+  display: flex;
+  align-items: center;
+  font-size: 15px;
+}
+.Form-Item-Label.isMsg {
+  margin-top: 8px;
+  margin-bottom: auto;
+}
+.Form-Item-Label.isMsg {
+  margin-top: 0;
+}
+.Form-Item-Label-Required {
+  border-radius: 6px;
+  margin-right: 8px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  width: 48px;
+  display: inline-block;
+  text-align: center;
+  background: #545454;
+  color: #fff;
+  font-size: 14px;
+}
+.Form-Item-Label-Required {
+  border-radius: 4px;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  width: 32px;
+  font-size: 10px;
+}
+.Form-Item-Input {
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  margin-left: 40px;
+  padding-left: 1em;
+  padding-right: 1em;
+  height: 48px;
+  flex: 1;
+  width: 100%;
+  max-width: 320px;
+  font-size: 18px;
+}
+.Form-Item-Input {
+  margin-left: 0;
+  margin-top: 18px;
+  height: 40px;
+  flex: inherit;
+  font-size: 15px;
+}
+.Form-Item-Textarea {
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  margin-left: 40px;
+  padding-left: 1em;
+  padding-right: 1em;
+  height: 216px;
+  flex: 1;
+  width: 100%;
+  max-width: 320px;
+  font-size: 18px;
+}
+.Form-Item-Textarea {
+  margin-top: 18px;
+  margin-left: 0;
+  height: 200px;
+  flex: inherit;
+  font-size: 15px;
+}
+.Form-Btn {
+  border-radius: 6px;
+  margin-top: 32px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin-bottom: 50px;
+  width: 230px;
+  display: block;
+  letter-spacing: 0.05em;
+  background: #545454;
+  color: #fff;
+  font-weight: bold;
+  font-size: 20px;
+}
+.Form-Btn {
+  margin-top: 24px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  width: 160px;
+  font-size: 16px;
+}
+
+/*Contact_iPadおよび共通設定*/
+@media screen and (min-width: 768px) 
+  .about 
+    margin-top: 80px
+  .Form 
+    margin-top: 50px;
+    width: 100%
+    .Form-Item 
+      padding-top: 24px;
+      padding-bottom: 24px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-wrap: nowrap;
+      width: 100%;
+    .Form-Btn 
+      margin-top: 50px;
+      margin-bottom: 30px
+
+/*Contact_PCおよび共通設定*/
+@media screen and (min-width: 1024px) 
+  .Form 
+    .Form-Btn 
+      margin-bottom: 50px
+
+  
+
+
  
   
 
