@@ -539,6 +539,12 @@ img {
     margin-top: 80px;
   }
 }
+/*Home_PCおよび共通設定*/
+@media screen and (min-width: 1280px) {
+  .key-visual .topphoto .key_font {
+    width: 460px;
+  }
+}
 /*Contact_iPhoneおよび共通設定*/
 .about {
   margin-top: 50px;
